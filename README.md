@@ -3,15 +3,15 @@
 # Proposta de aplicativo
 
 ## Equipe
-* **Nome do Aluno(a) 1:** [Seu nome e matrícula]
-* **Nome do Aluno(a) 2:** [Seu nome e matrícula]
-* **Nome do Aluno(a) 3:** [Seu nome e matrícula]
-* ...
+* Francisco Josias da Silva Batista - 542167
+* Cristiano Mendes da Silva - 558382 - Projeto integrado em Engenharia de Software 3
+* Paulo Victor Costa Ferreira - 557331
+* Guilherme Damasceno Nobre - 511329
 
 ---
 
 ## Título do Projeto
-[Escolha um título criativo e descritivo para o seu projeto.]
+Mural de Talentos
 
 ## Descrição do Projeto
 [Descreva em 2-3 parágrafos o que o seu projeto faz. Qual é o problema que ele resolve? Quem é o público-alvo? Quais são as principais funcionalidades?]
