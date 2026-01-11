@@ -45,22 +45,52 @@ Ao contrário de grandes plataformas como LinkedIn e InfoJobs, que têm baixa pe
 
 ---
 
-> [!WARNING]
-> Daqui em diante o README.md só deve ser preenchido no momento da entrega final.
-
 ##  Tecnologias: 
-Liste aqui as tecnologias e bibliotecas que foram utilizadas no projeto.
+A arquitetura do projeto é baseada em um aplicativo nativo Android consumindo serviços de Backend as a Service (BaaS) do Firebase.
 
+| Tecnologia | Descrição |
+| --- | --- |
+| **Kotlin** | Linguagem principal utilizada para o desenvolvimento mobile nativo Android. |
+| **Jetpack Compose** | Framework moderno para construção de interfaces reativas e declarativas. |
+| **Firebase Authentication** | Utilizado para autenticação segura de usuários (Email, Google, etc.). |
+| **Firebase Firestore** | Banco de dados NoSQL em tempo real para armazenamento e sincronização de dados (vagas, perfis, candidaturas). |
+| **Firebase Cloud Messaging** | Para o envio de notificações push sobre o status das candidaturas. |
+| **Room Database** | Solução local de persistência de dados, garantindo operação offline (cache de vagas, perfil). |
+| **ViewModel (Jetpack)** | Gerenciamento de estado e do ciclo de vida da UI, seguindo a arquitetura recomendada pelo Google. |
+| **Kotlin Flows (StateFlow)** | Utilizado para fluxos de dados assíncronos e reativos entre o ViewModel e a UI. |
+| **Google Maps API** | Integração para a funcionalidade de visualização de vagas no mapa. |
+| **Material Design 3** | Interface moderna e consistente com as diretrizes do Google. |
 ---
 
 ## Instruções para Execução
-[Inclua instruções claras sobre como rodar o projeto localmente. Isso é crucial para que você possa testá-lo nas próximas entregas. **Somente caso haja alguma coisa diferente do usual**
+### Pré-requisitos
 
-```bash
-# Clone o repositório
-git clone [https://docs.github.com/pt/repositories/creating-and-managing-repositories/about-repositories](https://docs.github.com/pt/repositories/creating-and-managing-repositories/about-repositories)
+* [Android Studio](https://developer.android.com/studio) (Versão Iguana ou superior)
+* JDK 17 ou superior
+* Um dispositivo Android (Físico ou Emulador)
+* Conta no [Firebase](https://firebase.google.com/)
 
-# Navegue para o diretório
-cd [nome-do-repositorio]
+### Passos para Execução
 
-# Siga as instruções específicas para a sua tecnologia...
+1.  **Clone o repositório:**
+    ```bash
+    git clone git@github.com:josiasdev/mural-talentos-app.git
+    cd mural-talentos-app
+    ```
+
+2.  **Configure o Firebase:**
+    * Acesse o console do Firebase e crie um novo projeto.
+    * Adicione um aplicativo Android ao seu projeto Firebase (o `package name` deve ser o mesmo do projeto clonado).
+    * Baixe o arquivo `google-services.json` gerado pelo Firebase.
+    * Mova o arquivo `google-services.json` para o diretório `app/` do seu projeto Android.
+    * Ative os serviços necessários no console do Firebase: **Authentication**, **Firestore Database** e **Cloud Messaging**.
+
+3.  **Abra no Android Studio:**
+    * Inicie o Android Studio e selecione "Open an existing project".
+    * Navegue até a pasta onde você clonou o repositório e abra-a.
+
+4.  **Sincronize e Execute:**
+    * Aguarde o Android Studio sincronizar as dependências do Gradle.
+    * Selecione um dispositivo (emulador ou físico).
+    * Clique no botão "Run" (▶️) para compilar e instalar o aplicativo.
+
