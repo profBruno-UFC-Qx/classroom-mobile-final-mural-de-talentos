@@ -1,4 +1,4 @@
-# 🔗 [Acesse o Código Fonte do Projeto Aqui](https://github.com/josiasdev/mural-talentos-app)
+# [Acesse o Código Fonte do Projeto Aqui](https://github.com/josiasdev/mural-talentos-app)
 
 
 # Proposta de aplicativo
